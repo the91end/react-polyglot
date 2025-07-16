@@ -7,7 +7,7 @@ export default function I18n({
   locale,
   messages,
 
-  allowMissing,
+  allowMissing = false,
   onMissingKey,
   interpolation,
   pluralRules,
@@ -54,11 +54,4 @@ I18n.propTypes = {
   }),
 
   children: PropTypes.element.isRequired,
-}
-
-I18n.defaultProps = {
-  allowMissing: false,
-  onMissingKey: undefined,
-  interpolation: undefined,
-  pluralRules: undefined,
 }
